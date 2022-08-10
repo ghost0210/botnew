@@ -244,7 +244,7 @@ def onmessage(update,bot:ObigramClient):
         else:
             mensaje = "🚷 No tienes Acceso 🚷"
             reply_markup = inlineKeyboardMarkup(
-                r1=[inlineKeyboardButton('⚙Contactar Soporte⚙',url='https://t.me/studio_apps_dev')]
+                r1=[inlineKeyboardButton('⚙Contactar Soporte⚙',url='https://t.me/Ghosthell0210')]
             )
             bot.sendMessage(update.message.chat.id,mensaje,reply_markup=reply_markup)
             return
@@ -762,8 +762,8 @@ def main():
     bot_token = os.environ.get('bot_token')
     print('init bot.')
     #set in debug
-    bot_token = '5334368566:AAE_3n3nVyi5F0_KpBRskZ62rVPnb96giec'
-    bot = '5334368566:AAE_3n3nVyi5F0_KpBRskZ62rVPnb96giec'
+    bot_token = '5426914864:AAGmeSLF84e32vb5GIowm5hN7ji15cpb-3s'
+    bot = 'ObigramClient(bot_token)'
     bot.onMessage(onmessage)
     bot.onCallbackData('/cancel ',cancel_task)
     bot.run()
